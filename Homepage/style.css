@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cardo&family=Outfit:wght@300;400;600&family=Roboto:wght@400;500;700;900&family=Sedgwick+Ave&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sedgwick Ave', cursive;
+    
+}
+
+body{
+   /* background-color: #aaa; */
+    background-image: url(img/Calçada_SP_ADBR-fotor-20230905195836.jpg) ;
+   
+    background-position: center;
+   
+}
+
+
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 40px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 20;
+}
+header.rolagem{
+    background-color: #001F3F;
+    padding: 20px 4%;
+    z-index: 20;
+}
+header.rolagem a{
+    color: #fff;
+}
+header.rolagem a:hover{
+    color: #fe775a;
+}
+header.rolagem img{
+    width: 30px;
+}
+
+header.rolagem button{
+    background-color: #fe775a;
+}
+
+header img{
+    width: 50px;
+    color: #fff;
+    z-index: 20;
+}
+header ul{
+    list-style-type: none;
+}
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+header ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+header ul li a:hover{
+    color: #ff532c;
+    font-size: 23px;
+}
+.btn-contato button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #001F3F;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 5px;
+}
+
+.btn-contato button:hover{
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #fe775a;
+}
+
+#parallax{
+    height: 100vh;
+    background-image: url(img/kobra-sp-mao-deus-new.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+}
+
+#parallax h1{
+    color: #fff;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 100px;
+    z-index: 10;
+    font-family: 'Sedgwick Ave', cursive;
+    
+}
+
+#h1 h1{
+    font-family: 'Sedgwick Ave', cursive;
+    text-align: center;
+    color: #fff; 
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 60px;    
+    
+}
+
+#galeria img{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+
+#galeria img:hover{
+    transform: scale(1.3);
+    transition: .5s;
+    box-shadow: 5px 5px 15px black;
+}
+
+#galeria{
+    width: 80%;
+    margin: auto;
+    column-count: 3;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+footer{
+    background-color: #001F3F;
+    color: #fe775a;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+footer h4{
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+footer a {
+    color: #fff;
+    text-decoration:none;
+    letter-spacing: 1px;
+    
+  }
+
+
+  
+  footer a:hover, footer a:focus {
+    color: #fe775a;
+    text-decoration:none;
+  }
+  
+  footer .form-control {
+      background-color: #1f2022;
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+      border: none;
+      resize: none;
+      color: #d1d2d2;
+      padding: 0.7em 1em;
+  }
+  footer .btn{
+    color: #fff;
+  }
+  footer .btn:hover{
+    color: #fe775a;
+  }
+
+  @media screen and (max-width: 768px) {
+	#galeria{
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #parallax{
+        background-position: center ;  
+    }
+    #parallax h1{
+        font-size: 50px;
+    }
+	#galeria{
+        column-count: 1;
+    }
+}

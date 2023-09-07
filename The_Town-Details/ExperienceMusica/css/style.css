@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cardo&family=Outfit:wght@300;400;600&family=Roboto:wght@400;500;700;900&family=Sedgwick+Ave&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sedgwick Ave', cursive;
+    
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 40px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 20;
+}
+header.rolagem{
+    background-color: #001F3F;
+    padding: 20px 4%;
+    z-index: 20;
+}
+header.rolagem a{
+    color: #fff;
+}
+header.rolagem a:hover{
+    color: #fe775a;
+}
+header.rolagem img{
+    width: 30px;
+}
+
+header.rolagem button{
+    background-color: #fe775a;
+}
+
+header img{
+    width: 50px;
+    color: #fff;
+    z-index: 20;
+}
+header ul{
+    list-style-type: none;
+}
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+header ul li a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+header ul li a:hover{
+    color: #ff532c;
+    font-size: 23px;
+}
+.btn-contato button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #001F3F;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 5px;
+}
+
+.btn-contato button:hover{
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #fe775a;
+}
+
+  /* Centraliza verticalmente os itens do carrossel */
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Define uma altura fixa para os itens do carrossel (ajuste conforme necessário) */
+  .carousel-item img {
+    max-height: 620px; /* Altura máxima desejada */
+    max-width: 100%; /* Largura máxima para manter a proporção */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  } 
+
+
+#principal{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1{
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 60px;
+    
+}
+
+#avaliacao{
+    position: relative;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.img-estrela{
+    width: 20%;
+    height: 100%;
+    background-image: url(star-review.png);
+    background-size: cover;
+}
+
+#texto-principal{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    font-family: 'roboto';
+    font-size: 20px;
+}
+
+#caixinhas{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    top: 80px;
+    text-decoration: none;
+}
+
+
+.caixas{
+    position: relative;
+    float: left;
+    background-color: #001F3F;
+    padding: 40px;
+    border: 6px double #fff;
+    border-radius: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    color: #fff;
+}
+
+.mapa{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    top: 200px;
+    color: #001F3F;
+}
+
+.mapa p{
+    font-family: 'roboto';
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.comentario{
+    position: relative;
+    display: flex;
+    float: left;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: auto;
+    top: 300px;
+    padding: 30px;
+    margin-left: 30px;
+}
+
+label{
+    color: #001F3F;
+    margin-left: 210px;
+}
+
+#avaliacaos-c{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 170px;
+}
+
+#avaliacao-c{
+    width: 50px;
+    height:50px;
+    background-image: url(star-review.png);
+    background-size: cover;
+}
+
+textarea{
+    background-color: #aaaaaab5;
+    border: none;
+    color: #001F3F;
+}
+
+#avaliacoes{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    float: left;
+    width: 40%;
+    height: auto;
+    top: 298px;
+    float: right;
+    margin-right: 30px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    background-color: #aaaaaab5;
+    color: #001F3F;
+}
+
+h4{
+    font-family: 'roboto';
+}
+
+#avaliacao-g{
+    position: relative;
+    display: flex;
+    float: left;
+    flex-direction: row;
+    height: auto;
+
+}
+
+#avaliacao2{
+    width: 30px;
+    height: 30px;
+    background-image: url(star-review.png);
+    background-size: cover;
+}
+
+.coment{
+    font-size: 20px;
+    font-family: 'roboto';
+    font-weight: lighter;
+}
+
+#footer{
+    position: relative;
+    display: flex;
+    clear: left;
+    top: 280px;
+
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    background-color: #001F3F;
+    color: #fe775a;
+    padding-top: 80px;
+    margin-top: 30px;
+}
+footer h4{
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+footer a {
+    color: #fff;
+    text-decoration:none;
+    letter-spacing: 1px;
+    
+  }
+
+  
+  footer a:hover, footer a:focus {
+    color: #fe775a;
+    text-decoration:none;
+  }
+  
+  footer .form-control {
+      background-color: #787a7d;
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+      border: none;
+      resize: none;
+      color: #d1d2d2;
+      padding: 0.7em 1em;
+      margin-bottom: 20px;
+  }
+  footer .btn{
+    color: #fff;
+  }
+  footer .btn:hover{
+    color: #fe775a;
+  }

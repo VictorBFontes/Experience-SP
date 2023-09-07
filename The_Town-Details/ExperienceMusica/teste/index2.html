@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pagina gastronomia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <header id="header">
+        <div class="container">
+            <div class="flex">
+                <a href="projeto-uc1-rev/index.html"><img src="img/logo.png" alt=""></a>
+                <nav>
+                    <ul>
+                        <li><a href="projeto-uc1-rev/index.html">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Quem somos</a></li>
+                    </ul>
+                </nav>
+                <div class="btn-contato">
+                    <a href="#fale-conosco"><button>CONTATO</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--carrossel-->
+
+    <main>
+        <div class="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img id="img" src="img/burguer.jpg" class="d-block w-100"  alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/marqsBurger.avif" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/burguer3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+
+        <section id="principal">
+            <h1>Marq's Burger</h1>
+        
+        <div id="avaliacao">
+            <div class="img-estrela"></div>
+            <div class="img-estrela"></div>
+            <div class="img-estrela"></div>
+            <div class="img-estrela"></div>
+            <div class="img-estrela"></div><p>(2423)</p>
+        </div> 
+        
+            <p id="texto-principal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cum sint reprehenderit ad corporis quo illo quis fugit explicabo necessitatibus dicta assumenda, quidem dolorem fugiat laudantium facilis sunt expedita. Libero.</p>
+        </section>
+
+        <section id="caixinhas">
+            <div class="caixas">
+            <p>ACESSIBILIDADE</p>
+            <nav>
+                <ul>
+                    <li>Rampa</li>
+                    <li>Rampa</li>
+                    <li>Rampa</li>
+                </ul>
+            </nav>
+           </div>
+
+            <div class="caixas">
+            <p>ACESSIBILIDADE</p>
+            <nav>
+                <ul>
+                    <li>Rampa</li>
+                    <li>Rampa</li>
+                    <li>Rampa</li>
+                </ul>
+            </nav>
+           </div>
+
+            <div class="caixas">
+            <p>ACESSIBILIDADE</p>
+            <nav>
+                <ul>
+                    <li>Rampa</li>
+                    <li>Rampa</li>
+                    <li>Rampa</li>
+                </ul>
+            </nav>
+           </div>
+        </section>
+
+        <section class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.669583371288!2d-46.7198802193125!3d-23.436300124444795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefbcb48fc7223%3A0x58f64c7dc24373e9!2sMarq&#39;s%20Burger%20-%20Hamburgueria!5e0!3m2!1spt-BR!2sbr!4v1693862052495!5m2!1spt-BR!2sbr" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+        <p>R. Cordeiro da Silva, 249 - Vila Nova Parada, São Paulo - SP, 02883-090</p>
+        </section>
+
+
+
+    <div class="container2">
+        <section class="comentario">
+            <form action="">
+                <fieldset>
+                    <label> Deixe aqui sua avaliação: </label>
+                <a id="avaliacaos-c" href="#">
+                    <div id="avaliacao-c"></div>
+                    <div id="avaliacao-c"></div>
+                    <div id="avaliacao-c"></div>
+                    <div id="avaliacao-c"></div>
+                    <div id="avaliacao-c"></div>
+                </a>
+                </div>
+            <br>
+            <textarea cols="40" rows="10" placeholder="comente aqui..."></textarea>
+            <br><br>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="avaliacoes">
+            <h3>
+                Avaliações:
+            </h3><br>
+            <h4>Claudia Silva</h4>
+        <div id="avaliacao-g">
+            <div id="avaliacao2"></div>
+            <div id="avaliacao2"></div>
+            <div id="avaliacao2"></div>
+            <div id="avaliacao2"></div>
+            <div id="avaliacao2"></div>
+        </div>
+        <p class="coment">Ótima hamburgueria para frequentar com a familia,. Espaço kids monitorado.</p><br>
+
+            <h4>Rodrigo Sales</h4>
+
+        <div id="avaliacao-g">
+            <div id="avaliacao2"></div>
+            <div id="avaliacao2"></div>
+            <div id="avaliacao2"></div>
+            <div id="avaliacao2"></div>
+            <div id="avaliacao2"></div>
+        </div>
+
+        <p class="coment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quasi veniam ad quod modi, incidunt inventore.</p>
+        </section>
+    </div>
+
+    </main>
+
+    <div id="footer">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h4><i class="fa fa-map"></i> EXPIRENCE SP</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="">Hamburguerias</a></li>
+                                    <li><a href="">cultura</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="">acessiveis</a></li>
+                                    <li><a href="">musica</a></li>
+                                    <li><a href="">Suporte</a></li>
+        
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+                            <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+                            <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
+                            <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
+                        </ul>
+                        <br>
+                    </div>
+                    <div class="col-md-2">
+                        <h4 id="fale-conosco" class="text-md-right">Fale Conosco</h4>
+                        <hr>
+                    </div>
+                    <div class="col-md-5">
+                        <form>
+                            <fieldset class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                            </fieldset>
+                            <fieldset class="form-group text-xs-right">
+                                <button type="button" class="btn btn-secondary-outline btn-lg">Enviar</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
